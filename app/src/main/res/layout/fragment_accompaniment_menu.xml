@@ -58,7 +58,8 @@
                     android:layout_height="wrap_content"
                     android:textAppearance="?attr/textAppearanceBody1"
                     android:text='@{viewModel.menuItems["bread"].name}'
-                    android:onClick="@{() -> viewModel.setAccompaniment()}"
+                    android:checked='@{viewModel.entree.name.equals(viewModel.menuItems["bread"].name)}'
+                    android:onClick='@{() -> viewModel.setAccompaniment("bread")}'
                     tools:text="Accompaniment 1" />
 
                 <TextView
@@ -87,7 +88,8 @@
                     android:layout_height="wrap_content"
                     android:textAppearance="?attr/textAppearanceBody1"
                     android:text='@{viewModel.menuItems["berries"].name}'
-                    android:onClick="@{() -> viewModel.setAccompaniment()}"
+                    android:checked='@{viewModel.entree.name.equals(viewModel.menuItems["berries"].name)}'
+                    android:onClick='@{() -> viewModel.setAccompaniment("berries")}'
                     tools:text="Accompaniment 2" />
 
                 <TextView
@@ -119,7 +121,8 @@
                     android:layout_height="wrap_content"
                     android:textAppearance="?attr/textAppearanceBody1"
                     android:text='@{viewModel.menuItems["pickles"].name}'
-                    android:onClick="@{() -> viewModel.setAccompaniment()}"
+                    android:checked='@{viewModel.entree.name.equals(viewModel.menuItems["pickles"].name)}'
+                    android:onClick='@{() -> viewModel.setAccompaniment("pickles")}'
                     tools:text="Accompaniment 3" />
 
                 <!-- TODO: set the text to the accompaniment description using the view model -->

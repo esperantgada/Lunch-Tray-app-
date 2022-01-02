@@ -77,7 +77,7 @@ class OrderViewModel : ViewModel() {
         //  entree price.
 
         if (_entree.value != null){
-            previousEntreePrice = menuItems[entree]!!.price
+            previousEntreePrice = menuItems[entree]?.price!!
         }
 
         // TODO: if _subtotal.value is not null subtract the previous entree price from the current
