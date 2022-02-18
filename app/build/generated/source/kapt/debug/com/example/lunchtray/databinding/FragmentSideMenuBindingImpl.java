@@ -187,6 +187,7 @@ public class FragmentSideMenuBindingImpl extends FragmentSideMenuBinding impleme
         java.lang.String viewModelMenuItemsPotatoesName = null;
         com.example.lunchtray.model.MenuItem viewModelMenuItemsPotatoes = null;
         com.example.lunchtray.model.MenuItem viewModelMenuItemsSalad = null;
+        java.lang.String subtotalAndroidStringSubtotalViewModelSubtotal = null;
         boolean viewModelEntreeNameEqualsViewModelMenuItemsRiceName = false;
         java.lang.String viewModelMenuItemsRiceDescription = null;
         java.lang.String viewModelMenuItemsRiceName = null;
@@ -219,6 +220,10 @@ public class FragmentSideMenuBindingImpl extends FragmentSideMenuBinding impleme
                         // read viewModel.subtotal.getValue()
                         viewModelSubtotalGetValue = viewModelSubtotal.getValue();
                     }
+
+
+                    // read @android:string/subtotal
+                    subtotalAndroidStringSubtotalViewModelSubtotal = subtotal.getResources().getString(R.string.subtotal, viewModelSubtotalGetValue);
             }
             if ((dirtyFlags & 0x1aL) != 0) {
 
@@ -346,7 +351,7 @@ public class FragmentSideMenuBindingImpl extends FragmentSideMenuBinding impleme
         if ((dirtyFlags & 0x19L) != 0) {
             // api target 1
 
-            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.subtotal, viewModelSubtotalGetValue);
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.subtotal, subtotalAndroidStringSubtotalViewModelSubtotal);
         }
     }
     // Listener Stub Implementations
@@ -437,7 +442,7 @@ public class FragmentSideMenuBindingImpl extends FragmentSideMenuBinding impleme
 
 
 
-                    viewModel.setSide("bread");
+                    viewModel.setSide("salad");
                 }
                 break;
             }

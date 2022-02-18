@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.lunchtray.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -61,7 +62,7 @@ public final class FragmentStartOrderBinding implements ViewBinding {
       ConstraintLayout layoutStartOrder = (ConstraintLayout) rootView;
 
       id = R.id.start_order_btn;
-      Button startOrderBtn = rootView.findViewById(id);
+      Button startOrderBtn = ViewBindings.findChildViewById(rootView, id);
       if (startOrderBtn == null) {
         break missingId;
       }

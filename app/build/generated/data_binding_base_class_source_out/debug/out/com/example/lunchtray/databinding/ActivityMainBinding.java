@@ -9,6 +9,7 @@ import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.lunchtray.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -61,7 +62,7 @@ public final class ActivityMainBinding implements ViewBinding {
       ConstraintLayout container = (ConstraintLayout) rootView;
 
       id = R.id.nav_host_fragment;
-      FragmentContainerView navHostFragment = rootView.findViewById(id);
+      FragmentContainerView navHostFragment = ViewBindings.findChildViewById(rootView, id);
       if (navHostFragment == null) {
         break missingId;
       }

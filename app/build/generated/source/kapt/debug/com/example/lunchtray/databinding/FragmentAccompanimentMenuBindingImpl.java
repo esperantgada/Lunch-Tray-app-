@@ -170,6 +170,7 @@ public class FragmentAccompanimentMenuBindingImpl extends FragmentAccompanimentM
         com.example.lunchtray.ui.order.AccompanimentMenuFragment accompanimentMenuFragment = mAccompanimentMenuFragment;
         java.lang.String viewModelMenuItemsBerriesDescription = null;
         java.lang.String viewModelMenuItemsPicklesGetFormattedPrice = null;
+        java.lang.String subtotalAndroidStringSubtotalViewModelSubtotal = null;
         boolean viewModelEntreeNameEqualsViewModelMenuItemsBreadName = false;
         java.util.Map<java.lang.String,com.example.lunchtray.model.MenuItem> viewModelMenuItems = null;
         com.example.lunchtray.model.MenuItem viewModelEntreeGetValue = null;
@@ -205,6 +206,10 @@ public class FragmentAccompanimentMenuBindingImpl extends FragmentAccompanimentM
                         // read viewModel.subtotal.getValue()
                         viewModelSubtotalGetValue = viewModelSubtotal.getValue();
                     }
+
+
+                    // read @android:string/subtotal
+                    subtotalAndroidStringSubtotalViewModelSubtotal = subtotal.getResources().getString(R.string.subtotal, viewModelSubtotalGetValue);
             }
             if ((dirtyFlags & 0x1aL) != 0) {
 
@@ -313,7 +318,7 @@ public class FragmentAccompanimentMenuBindingImpl extends FragmentAccompanimentM
         if ((dirtyFlags & 0x19L) != 0) {
             // api target 1
 
-            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.subtotal, viewModelSubtotalGetValue);
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.subtotal, subtotalAndroidStringSubtotalViewModelSubtotal);
         }
     }
     // Listener Stub Implementations

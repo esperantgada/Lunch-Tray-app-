@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\hp\\AndroidStudioProjects\\android-basics-kotlin-lunch-tray-app-main\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
+            "outputFile": "C:\\Users\\hp\\AndroidStudioProjects\\Google Android Developers\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\hp\\caches\\transforms-2\\files-2.1\\e70b5550e792cc5a5f49f4beae756a82\\core-1.3.2\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-3\\dcfcd39eaebc97a6fb7041ebbfb7991b\\transformed\\core-1.3.2\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\hp\\caches\\transforms-2\\files-2.1\\48a62011c4a7c08c3a91b4edbbc6d8e2\\appcompat-1.2.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-3\\3d78982fda4f3e49b18a5e058c37a631\\transformed\\appcompat-1.2.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -1,2 +1,0 @@
-com/example/lunchtray/test/BuildConfig.java
- com.example.lunchtray.test.BuildConfig
